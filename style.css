@@ -8,11 +8,24 @@ body, html {
   font-family: 'Cedarville Cursive', cursive;
 }
 
-h1 {
+#footer {
+  position: fixed;
+  bottom: 20px;
+  width: 100vw;
+}
+
+h1, h2, h3, h4, h5, h6 {
   text-align: center;
-  font-size: 50px;
   margin: 0;
+}
+
+h1 {
+  font-size: 50px;
   padding-top: 50px;
+}
+
+h6 {
+  font-size: 20px;
 }
 
 .keys {
@@ -27,7 +40,7 @@ h1 {
   border: .2rem solid black;
   border-radius: .5rem;
   margin: 1rem;
-  font-size: 1.5rem;
+  font-size: 2.0rem;
   padding-top: 1rem;
   transition: all .07s ease;
   width: 10rem;  
