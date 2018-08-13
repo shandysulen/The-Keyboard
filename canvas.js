@@ -6,7 +6,7 @@ c = canvas.getContext('2d');
 
 var circleArray = [];
 
-const colorArray = ['#DDD8C4', '#8DAA9D', '#522B47', '#7B0828', '#0F0E0E'];
+var colorArray = defaultColorArray = ['#DDD8C4', '#8DAA9D', '#522B47', '#7B0828', '#0F0E0E'];
 
 const radiusCutoff = 1100;
 
@@ -53,3 +53,14 @@ function animate() {
 }
 
 animate();
+
+function updateColors(event) {    
+    var colors = document.querySelectorAll('input[type="color"]');
+    console.log(colors);
+
+    for (let i = 0; i < colorArray.length; i++) {
+        colorArray[i] = colors[i].value;
+    }
+}
+
+document.getElementById('sidebar-close').addEventListener('click', updateColors);
