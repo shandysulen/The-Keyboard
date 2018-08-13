@@ -10,6 +10,10 @@ body, html {
   font-family: 'Cedarville Cursive', cursive;
 }
 
+canvas {
+  width: 100%;
+}
+
 .d-inline {
   display: inline;
 }
@@ -36,7 +40,7 @@ body, html {
 }
 
 #sidebar-close {    
-  margin-top: 70px;
+  margin-top: 135px;
   color: #ffc600;
   border-color: ffc600;
 }
@@ -95,7 +99,7 @@ footer {
 }
 
 main {
-  margin: 0 10px;
+  margin: 0;
   transition: margin-left 0.5s;
 }
 
@@ -142,6 +146,12 @@ p {
 }
 
 .key {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   height: 72px;
   border: .2rem solid #DDDDDD;
   border-radius: .5rem;
